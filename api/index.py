@@ -2,7 +2,7 @@ from flask import Flask,Response
 import os
 import time
 import random
-from PIL import Image as img
+#from PIL import Image as img
 
 
 
@@ -31,5 +31,7 @@ def index():
                  time.sleep(0.2)  # jeda antar frame
     return Response(generate(), mimetype='text/plain')
 
-
+@app.route('/test')
+def index():
+    return "<pre> hello word</pre>"
 
