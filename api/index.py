@@ -7,7 +7,7 @@ from PIL import Image as img
 
 
 def fr(path):
-    file = open("bird_text/"+path,"r")
+    file = open("./bird_text/"+path,"r")
     return file.read()
 app = Flask(__name__)
 @app.route('/')
@@ -15,7 +15,7 @@ def animated_ascii():
     def generate():
 
          while True:
-            frame = open("logo_ascii.txt","r").read()
+            frame = open("./logo_ascii.txt","r").read()
             ran_num = random.randint(33,40)
             yield f"\033[1;34m{frame}\n"
             time.sleep(5)
