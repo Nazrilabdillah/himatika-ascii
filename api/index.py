@@ -33,5 +33,5 @@ def index():
 
 @app.route('/test')
 def test():
-    return str(os.listdir("/local"))
+    return str(os.listdir("/"))
 
