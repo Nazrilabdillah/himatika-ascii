@@ -3,5 +3,5 @@
     { "source": "/(.*)", "destination": "/api/index" },
     
   ],
-  "route":[{"src":"/(.*)","dest":"/api/index"}],
+  "route":[{"src":"/(.*)","dest":"/api/index"}]
 }
