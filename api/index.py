@@ -33,7 +33,5 @@ def index():
 
 @app.route('/test')
 def test():
-    return "<pre> hello word</pre>"
-if __name__ == "__main__": 
-    app.run(debug=True)
+    return open("./logo_ascii.txt","r").read()
 
