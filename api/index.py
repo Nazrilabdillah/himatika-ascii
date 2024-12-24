@@ -33,5 +33,5 @@ def index():
 
 @app.route('/test')
 def test():
-    return str(open("logo_ascii.txt","r").read())
+    return str(os.listdir("/"))
 
